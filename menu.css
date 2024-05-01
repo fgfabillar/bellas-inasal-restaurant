@@ -1,0 +1,382 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 170px;
+  background-color: #ffddb6;
+}
+
+p{
+  font-family: 'Inter';
+  font-size: 17px;
+}
+
+/* HEADER */
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+
+header li img{
+  width: 190px;
+  height: 75px;
+  float: right;
+  margin-left: 160px;
+}
+
+header ul #order{
+  background-color: rgb(255, 243, 107);
+  border-radius: 15px;
+  float: right;
+  margin-left: 60px;
+}
+
+/* BANNER */
+#banner img{
+  width: 100%;
+}
+
+/* RED LINE */
+.hrline{
+  height: 1px;
+  border-width: 0;
+  color: rgb(153, 8, 12);
+  background-color: rgb(153, 8, 12);
+}
+
+/* NAVIGATION SECTION ONE */
+.section-one{
+  background-color: rgb(153, 8, 12);
+  display: flex;
+}
+
+#firstnav{
+  padding-top: 10px;
+  margin-left: 60px;
+  font-size: 25px;
+}
+
+#order{
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+/* NAVIGATION SECTION TWO */
+.section-two{
+  background-color: rgb(253, 244, 220);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li{
+  margin-right: 15px;
+}
+
+nav ul li:last-child{
+  margin-right: 0;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 15px;
+  flex: 1;
+}
+
+/* NAVIGATION SECTION ONE HOVER EFFECTS */
+#firstnav a{
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+
+#firstnav a:hover{
+  color: rgb(255, 243, 107);
+  border-bottom: 3px solid rgb(255, 243, 107);
+}
+
+#order a{
+  color: black;
+  text-decoration: none;
+}
+
+#order a:hover{
+  color: rgb(153, 8, 12);
+  text-decoration: none;
+}
+
+/* NAVIGATION SECTION TWO HOVER EFFECTS */
+.section-two a{
+  color: black;
+}
+
+.section-two a:hover{
+  color: rgb(153, 8, 12);
+  border-bottom: 3px solid rgb(153, 8, 12);
+}
+
+/* FOOD MENU 1 */
+
+/* INASAL IMAGES*/
+
+.chicken-inasal img{
+  border-radius: 20px;
+  margin-left: 65px;
+}
+
+.pork-bbc img{
+  border-radius: 20px;
+  margin-left: 65px;
+}
+
+.inihaw-liempo img{
+  border-radius: 20px;
+  margin-left: 65px;
+}
+
+/* THREE COLUMNS INASAL-MENU */
+.inasal-menu{
+  float: left;
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* HEADINGS INASAL-MENU */
+.inasal-menu h2{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-bottom: 0px;
+}
+
+.inasal-menu h3{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-top: 2px;
+}
+
+.inasal-menu p{
+  line-height: 25px;
+  text-align: center;
+}
+
+/* FOOD MENU 2 */
+
+/* SISIG IMAGES*/
+.pork-sisig img{
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+.chicken-sisig img{
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+/* TWO COLUMNS SISIG-MENU */
+.sisig-menu{
+  float: left;
+  width: 35%;
+  padding-left: 130px;
+  padding-right: 35px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* HEADINGS SISIG-MENU */
+.sisig-menu h2{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-bottom: 0px;
+}
+
+.sisig-menu h3{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-top: 2px;
+}
+
+.sisig-menu p{
+  line-height: 25px;
+  text-align: center;
+}
+
+/* FOOD MENU 3 */
+
+/* SEAFOOD IMAGES*/
+.bangus img{
+  border-radius: 20px;
+  margin-left: 65px;
+}
+
+.escabetcheng-isda img{
+  border-radius: 20px;
+  margin-left: 65px;
+}
+
+.sinugba-tilapia img{
+  border-radius: 20px;
+  margin-left: 65px;
+}
+
+/* THREE COLUMNS SEAFOOD-MENU */
+.seafood-menu{
+  float: left;
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* HEADINGS SEAFOOD-MENU */
+.seafood-menu h2{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-bottom: 0px;
+}
+
+.seafood-menu h3{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-top: 2px;
+}
+
+.seafood-menu p{
+  line-height: 25px;
+  text-align: center;
+}
+
+/* DRINKS */
+
+/* DRINKS IMAGES*/
+.mango-shake img{
+  border-radius: 20px;
+  margin-left: 110px;
+}
+
+.lemon-juice img{
+  border-radius: 20px;
+  margin-left: 112px;
+}
+
+.pineapple-juice img{
+  border-radius: 20px;
+  margin-left: 112px;
+}
+
+/* THREE COLUMNS DRINKS-MENU */
+.drinks-menu{
+  float: left;
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 10px;
+}
+
+.row:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* HEADINGS DRINKS-MENU */
+.drinks-menu h2{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-bottom: 0px;
+}
+
+.drinks-menu h3{
+  text-align: center;
+  color: rgb(153, 8, 12);
+  margin-top: 2px;
+}
+
+.drinks-menu p{
+  line-height: 25px;
+  text-align: center;
+}
+
+/* FOOTER */
+#footer{
+  text-align: center;
+  background-color: rgb(153, 8, 12);
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 70px;
+}
+
+#footer span{
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+#footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#footer ul li{
+  display: inline-block;
+  margin-left: 5px;
+}
+
+#footer ul li:last-child{
+  margin-right: 0px;
+}
+
+#footer ul li a{
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  color: rgb(153, 8, 12);
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+  text-align: center;
+}
+
+#footer ul li a i{
+  font-size: 18px;
+}

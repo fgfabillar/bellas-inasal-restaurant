@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@800&display=swap"
+          rel="stylesheet">
+
+    <!-- FOOTER ICONS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+<body>
+
+<header>
+    <!-- SECTION ONE NAVIGATION -->
+    <div class="section-one">
+        <nav>
+            <ul>
+                <li id="logo"><img src="Assignment 2 - HTML & CSS/BellasInasalOfficialLogo.png" alt="logo"></li>
+                <li id="firstnav"><a href="index.html">HOME</a></li>
+                <li id="firstnav"><a href="menu.html">MENU</a></li>
+                <li id="firstnav"><a href="contact.html">CONTACT</a></li>
+                <li id="order"><a href="ordernow.html">ORDER NOW</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- CONTACT DETAILS -->
+<div id="contact-details" class="flex-container">
+    <div class="contact">
+        <h2>CONTACT</h2>
+        <p>Call us at +1 (289) 521-7088 or <br> Visit us at 848 Burnhamthorpe Road West, Mississauga, ON, Canada, Mississauga, L5C 2S3</p>
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11561.87072732956!2d-79.6551004!3d43.575974!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b4133c2cd7571%3A0x8abd0eb79500bee!2sBella&#39;s%20Inasal!5e0!3m2!1sen!2sca!4v1702822109187!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <div class="reserve">
+        <h2>FOR RESERVATION</h2>
+        <p>Fill out this form to reserve a table or send us a message</p>
+    
+        <div class="reservation-form">
+            <form action="submission.html" method="POST">
+                <div class="reservation-details">
+                    <input class="entry" type="text" placeholder="Name" required name="name">
+                    <input class="entry" type="text" placeholder="E-mail Address" required name="email">
+                    <input class="entry" type="text" placeholder="Phone Number" required name="phone">
+                    <input class="entry" type="number" placeholder="Number of Guests" required name="number">
+                    <input class="entry" type="datetime-local" placeholder="Date and Time" required name="date" value="2023-12-01T10:00">
+                    <input class="entry" list="reservation-type" id="reservation-box" name="reservation-box" placeholder="Reservation Type">
+                    <datalist id="reservation-type">
+                        <option value="Breakfast"></option>
+                        <option value="Lunch"></option>
+                        <option value="Dinner"></option>
+                        <option value="Birthday"></option>
+                        <option value="Anniversary"></option>
+                        <option value="Corporate"></option>
+                        <option value="Other"></option>
+                    </datalist>
+                    <input class="entry" type="text" placeholder="Any Special Requests" required name="message">
+                    <button class="submit" type="submit">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+    <span>© 2023 ALL RIGHTS RESERVED | BELLA'S INASAL </span>
+    <ul>
+        <li><a href="https://www.facebook.com/people/Bellas-Inasal/100063490046833/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fa fa-youtube"></i></a></li>
+    </ul>
+</div>
+
+</body>
+</html>

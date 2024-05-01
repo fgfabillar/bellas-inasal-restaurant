@@ -1,0 +1,326 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding-top: 100px;
+  background-color: #ffddb6;
+}
+    
+p{
+  font-family: 'Inter';
+  font-size: 17px;
+}
+    
+/* HEADER */
+header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 1000;
+}
+    
+header li img{
+  width: 190px;
+  height: 75px;
+  float: right;
+  margin-left: 160px;
+}
+    
+header ul #order{
+  background-color: rgb(255, 243, 107);
+  border-radius: 15px;
+  float: right;
+  margin-left: 60px;
+}
+    
+/* NAVIGATION SECTION ONE */
+.section-one{
+  background-color: rgb(153, 8, 12);
+  display: flex;
+}
+    
+#firstnav{
+  padding-top: 10px;
+  margin-left: 60px;
+  font-size: 25px;
+}
+    
+#order{
+  padding-top: 10px;
+  font-size: 25px;
+}
+  
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+    
+nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+    
+nav ul li{
+  margin-right: 15px;
+}
+    
+nav ul li:last-child{
+  margin-right: 0;
+}
+    
+nav ul li a{
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  text-align: center;
+  padding: 8px 15px;
+  flex: 1;
+}
+    
+/* NAVIGATION SECTION ONE HOVER EFFECTS */
+#firstnav a{
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid transparent;
+}
+    
+#firstnav a:hover{
+  color: rgb(255, 243, 107);
+  border-bottom: 3px solid rgb(255, 243, 107);
+}
+    
+#order a{
+  color: black;
+  text-decoration: none;
+}
+    
+#order a:hover{
+  color: rgb(153, 8, 12);
+  text-decoration: none;
+}
+
+/* ORDER FORM */
+#order-now{
+  flex: 1;
+  margin-top: 50px;
+  margin-left: 300px;
+  margin-right: 300px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: rgb(253,244,220);
+  border-radius: 30px;
+  text-align: center;
+}
+
+#order-now h2{
+  font-size: 40px;
+  text-align: center;
+  color: rgb(153, 8, 12);
+}
+
+/* CUSTOMER INFORMATION */
+.customer-info{
+  display: flex;
+  flex-direction: column;
+}
+
+.entry{
+  padding: 12px;
+  width: 95%; 
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  margin-bottom: 20px;
+}
+
+.entry:focus{
+  outline: none;
+  border-color: rgb(153, 8, 12);
+}
+
+input::placeholder{
+  font-size: 16px; 
+  font-family: 'Inter';
+}
+      
+.customer-info h3{
+  font-size: 11px; 
+  font-family: 'Arial';
+  color: black;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 3px;
+  font-style: italic;
+}
+
+.customer-info h4{
+  font-size: 25px;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+    
+/* INASAL MENU */
+.inasal-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SISIG MENU */
+.sisig-menu{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 30px;
+}
+
+/* SEAFOOD MENU */
+.seafood-menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+/* DRINKS MENU */
+.drinks-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* MEAL CHOICES */
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+
+.menu-item label{
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Poppins';
+  font-size: 17px;
+}
+
+.menu-item input[type="checkbox"]{
+  transform: scale(1.5);
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+
+.menu-item input[type="number"]{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+}
+
+.menu-item input[type="number"]:focus{
+  outline: none;
+  border-color: rgb(153, 8, 12);
+}
+
+.menu-item img{
+  width: 200px;
+  height: 130px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.menu-item p{
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-style:italic;
+}
+
+/* PRICE LABEL */
+
+.label{
+  color: black;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.price{
+  background-color:rgb(251, 242, 140);
+} 
+
+.submit{
+  padding: 10px;
+  width: 100%; 
+  max-width: 200px; 
+  border-radius: 5px;
+  border: 1px solid rgb(204, 204, 204);
+  background-color: white;
+  margin-top: 15px;
+  font-size: 15px;
+  margin-left: 249px;
+  margin-right: 251px;
+}
+      
+.submit:hover{
+  background-color: rgb(153, 8, 12);
+  color: white;
+}
+
+/* FOOTER */
+#footer{
+  text-align: center;
+  background-color: rgb(153, 8, 12);
+  color: white;
+  padding: 10px;
+  font-size: 15px;
+  font-family: 'Inter', sans-serif;
+  margin-top: 100px;
+}
+    
+#footer span{
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+    
+#footer ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+    
+#footer ul li{
+  display: inline-block;
+  margin-left: 5px;
+}
+    
+#footer ul li:last-child{
+  margin-right: 0px;
+}
+    
+#footer ul li a{
+  width: 35px;
+  height: 35px;
+  line-height: 37px;
+  color: rgb(153, 8, 12);
+  border-radius: 50%;
+  background: white;
+  display: inline-block;
+  text-align: center;
+}
+    
+#footer ul li a i{
+  font-size: 18px;
+}

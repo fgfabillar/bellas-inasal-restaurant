@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Now</title>
+    <link rel="stylesheet" href="ordernow.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@800&display=swap"
+          rel="stylesheet">
+
+    <!-- FOOTER ICONS -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+
+<header>
+    <!-- SECTION ONE NAVIGATION -->
+    <div class="section-one">
+        <nav>
+            <ul>
+                <li id="logo"><img src="Assignment 2 - HTML & CSS/BellasInasalOfficialLogo.png" alt="logo"></li>
+                <li id="firstnav"><a href="index.html">HOME</a></li>
+                <li id="firstnav"><a href="menu.html">MENU</a></li>
+                <li id="firstnav"><a href="contact.html">CONTACT</a></li>
+                <li id="order"><a href="ordernow.html">ORDER NOW</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<form action="submission.html" method="POST">
+    <div id="order-now">
+        <h2>ORDER FORM</h2>
+        <div class="customer-info">
+            <!-- CUSTOMER INFORMATION -->
+            <input class="entry" type="text" placeholder="Name" required name="name">
+            <input class="entry" type="text" placeholder="E-mail Address" required name="email">
+            <input class="entry" type="text" placeholder="Phone Number" required name="phone">
+            <input class="entry" type="text" placeholder="Address" required name="address">
+
+            <!-- DATE AND TIME OF DELIVERY -->
+            <h3>*Indicate date and time of delivery</h3>
+            <input class="entry" type="datetime-local" placeholder="Date and Time" required name="date" value="2023-12-01T10:00">
+
+            <h4>Meal Choices</h4>
+
+            <!-- INASAL MENU -->
+            <div class="inasal-menu">
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="chicken-inasal" value="chicken-inasal">
+                  <label for="chicken-inasal">Chicken Inasal</label>
+                  <span class="label price">$12.00</span>
+                  <input type="number" name="quantity" id="chicken-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/1-Chicken inasal with atsara.jpg" alt="chicken Inasal with atsara">
+                  <p>marinated chicken, calamansi, vinegar, soy sauce, garlic, ginger, lemongrass, annatto oil</p>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="pork-barbecue" value="pork-barbecue">
+                  <label for="pork-barbecue">Pork Barbecue</label>
+                  <span class="label price">$10.00</span>
+                  <input type="number" name="quantity" id="pork-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/2-Pork BBQ with Atsara.jpg" alt="pork Barbecue with Atsara">
+                  <p>pork slices, soy sauce, vinegar, garlic, ketchup, spices</p>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="inihaw-liempo" value="inihaw-liempo">
+                  <label for="inihaw-liempo">Inihaw na Liempo</label>
+                  <span class="label price">$15.00</span>
+                  <input type="number" name="quantity" id="liempo-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/3-Inihaw na liempo with atsara.jpg" alt="inihaw na Liempo with atsara">
+                  <p>thinly sliced pork belly, soy sauce, calamansi (lime juice), garlic, pepper</p>
+              </div>
+            </div>
+            
+            <br>
+            <!-- SISIG MENU -->
+            <div class="sisig-menu">
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="pork-sisig" value="pork-sisig">
+                  <label for="pork-sisig">Pork Sisig</label>
+                  <span class="label price">$14.00</span>
+                  <input type="number" name="quantity" id="porksisig-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/4-Pork Sisig.jpg" alt="pork sisig with rice">
+                  <p>finely chopped chicken meat, onion, red and green chili peppers, calamansi (lime juice), mayonnaise, soy sauce, topped with garlic, bell peppers, and egg</p>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="chicken-sisig" value="chicken-sisig">
+                  <label for="chicken-sisig">Chicken Sisig</label>
+                  <span class="label price">$16.00</span>
+                  <input type="number" name="quantity" id="chickensisig-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/5-ChickenSisig.jpg" alt="chicken sisig with rice">
+                  <p>finely chopped pork belly, onion, red and green chili peppers, calamansi (lime juice), mayonnaise, soy sauce, topped with garlic, liver, and egg</p>
+              </div>
+            </div>
+
+            <br>
+            <!-- SEAFOOD MENU -->
+            <div class="seafood-menu">
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="bangus" value="bangus">
+                  <label for="bangus">Bangus</label>
+                  <span class="label price">$10.00</span>
+                  <input type="number" name="quantity" id="bangus-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/6-Bangus with atsara.jpg" alt="bangus with rice">
+                  <p>milkfish (bangus), marinade ingredients include vinegar, soy sauce, garlic, and spices</p>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="escabetche-pampano" value="escabetche-pampano">
+                  <label for="escabetche-pampano">Escabetcheng Isda</label>
+                  <span class="label price">$18.00</span>
+                  <input type="number" name="quantity" id="escabetche-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/7-Escabetche Pampano.jpg" alt="escabetche pampano">
+                  <p>pampano fried fish, vinegar, sugar, bell peppers, onions and carrots, seasonings and spices</p>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="sinugba-tilapia" value="sinugba-tilapia">
+                  <label for="sinugba-tilapia">Sinugba na Tilapia</label>
+                  <span class="label price">$18.00</span>
+                  <input type="number" name="quantity" id="sinugba-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/8-Singuba na Tilapia.jpg" alt="Sinugba na Tilapia">
+                  <p>tilapia fish, marinade ingredients include soy sauce, calamansi, garlic, pepper</p>
+              </div>
+            </div>
+
+            <br>
+            <!-- DRINKS -->
+            <div class="drinks-menu">
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="mango-shake" value="mango-shake">
+                  <label for="mango-shake">Mango Shake</label>
+                  <span class="label price">$10.00</span>
+                  <input type="number" name="quantity" id="mango-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/2-Scaled-Mango Shake.png" alt="mango shake">
+                  <p>ripe mangoes, milk yogurt, sugar</p>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="lemon-juice" value="lemon-juice">
+                  <label for="lemon-juice">Lemon Juice</label>
+                  <span class="label price">$8.00</span>
+                  <input type="number" name="quantity" id="lemon-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/1-Scaled-Lemon Juice.png" alt="lemon juice">
+                  <p>fresh lemons, water, honey</p>
+              </div>
+
+              <div class="menu-item">
+                  <input type="checkbox" name="menu-item" id="pineapple-juice" value="pineapple-juice">
+                  <label for="pineapple-juice">Pineapple Juice</label>
+                  <span class="label price">$7.00</span>
+                  <input type="number" name="quantity" id="pineapple-quantity" placeholder="Quantity">
+                  <img src="Assignment 2 - HTML & CSS/1-Scaled-Pineapple Juice.png" alt="pineapple juice">
+                  <p>fresh pineapples, water, honey</p>
+              </div>
+            </div>
+
+            <br>
+            <input class="entry" type="text" placeholder="Specify if you have allergies or special requests">
+            <button class="submit" type="submit">PLACE ORDER</button>
+        </div>
+    </div>
+</form>
+ 
+<!-- FOOTER -->
+<div id="footer">
+  <span>© 2023 ALL RIGHTS RESERVED | BELLA'S INASAL </span>
+  <ul>
+      <li><a href="https://www.facebook.com/people/Bellas-Inasal/100063490046833/" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://www.youtube.com" target="_blank" title="YouTube"><i class="fa fa-youtube"></i></a></li>
+  </ul>
+</div>
+
+</body>
+</html>
